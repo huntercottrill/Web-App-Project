@@ -1,17 +1,16 @@
 <nav class="navbar bg-dark">
     <ul class="nav">
-        <div>
-            <button>
-                <a href="#"><img src="images/Crunchyroll.svg" alt="Crunchyroll logo"></a>
-            </button>
-        </div>
+        <a class="nav-item text-white" href="#">
+            <img src="images/crunchyrollbeta.PNG" alt="Crunchyroll logo">
+        </a>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false" id="dropDownMenuButton1">
                 Browse
             </button>
 
-            <ul class="dropdown-menu multi-column dropdown-menu-dark" aria-labelledby="dropDownMenuButton1">
+            <ul class="dropdown-menu multi-column dropdown-menu-dark" style="z-index: 9999;"
+                aria-labelledby="dropDownMenuButton1">
                 <div class="row" style="width: 800px;">
                     <div class="col-md">
                         <li><a class="dropdown-item" href="#">Popular</a></li>
@@ -92,7 +91,11 @@
                     <path
                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                 </svg> -->
-                <a href="#"><img src="images/Search.PNG" alt="Search"></a>
+                <a href="#">
+                    <svg class="bi" width="20" height="20" color="white">
+                        <use xlink:href="bootstrap-icons.svg#search"></use>
+                    </svg>
+                </a>
             </button>
         </div>
 
@@ -105,17 +108,49 @@
                     <path
                         d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z" />
                 </svg> -->
-                <a href="#"><img src="images/Lists.PNG" alt="List"></a>
+                <a href="#">
+                    <svg class="bi" width="20" height="20" color="white">
+                        <use xlink:href="bootstrap-icons.svg#bookmark"></use>
+                    </svg>
+                </a>
             </button>
         </div>
 
-        <div class="dropdown">
+        <div class="nav-item dropdown">
             <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false" id="dropDownMenuButton1">
-                <img src="Avatar.png" alt="Avatar">
+                <svg width="35" height="30">
+                    <circle cx="16" cy="15" r="15" stroke-width="0" fill="white" />
+                </svg>
             </button>
 
-            <ul class="dropdown-menu multi-column dropdown-menu-dark" style="border: 100px;"
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                style="z-index: 9999; width: 388; height: 549.333;">
+                <div style="height: 400px; width: 380.333px; overflow:auto;">
+                    <button class="dropdown-item text-white" type="button"
+                        style="width: 328px; height: 24px; padding-left: 24px; padding-right: 24px; padding-top: 14px; padding-bottom: 14px;">Username</button>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item text-white" type="button"
+                        style="width: 328px; height: 24px; padding-left: 24px; padding-right: 24px; padding-top: 14px; padding-bottom: 14px;">Watchlist</button>
+                    <button class="dropdown-item text-white" type="button"
+                        style="width: 328px; height: 24px; padding-left: 24px; padding-right: 24px; padding-top: 14px; padding-bottom: 14px;">Crunchylists</button>
+                    <button class="dropdown-item text-white" type="button"
+                        style="width: 328px; height: 24px; padding-left: 24px; padding-right: 24px; padding-top: 14px; padding-bottom: 14px;">History</button>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item text-white" type="button"
+                        style="width: 328px; height: 24px; padding-left: 24px; padding-right: 24px; padding-top: 14px; padding-bottom: 14px;">My
+                        Account</button>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item text-white" type="button"
+                        style="width: 328px; height: 24px; padding-left: 24px; padding-right: 24px; padding-top: 14px; padding-bottom: 14px;">Leave
+                        Feedback</button>
+                </div>
+                <div class="dropdown-divider"></div>
+                <button class="dropdown-item text-white" type="button"
+                    style="width: 328px; height: 24px; padding-left: 24px; padding-right: 24px; padding-top: 14px; padding-bottom: 14px;">Log
+                    Out</button>
+            </div>
+            <!-- <ul class="dropdown-menu multi-column dropdown-menu-dark" style="border: 100px;"
                 aria-labelledby="dropDownMenuButton1">
                 <li><a class="text-white" href="#"><img src="">Username</a></li>
                 <div class="dropdown-divider"></div>
@@ -127,7 +162,7 @@
                 <div class="dropdown-divider"></div>
                 <li><a class="text-white" href="#">Leave Feedback</a></li>
                 <li><a class="text-white" href="#"><img src="images/logout.png">Log Out</a></li>
-            </ul>
+            </ul> -->
         </div>
     </ul>
 </nav>
