@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './headers/top-bar.component';
 import { BotBarComponent } from './footer/bot-bar.component';
 import { CarouselComponent } from './body/carousel.component';
+import { CarouselCardsComponent } from './body/carousel-cards.component';
+import { TopPicksComponent } from './body/top-picks.component';
 
 @NgModule({
   declarations: [
     AppComponent, 
     TopBarComponent,
     BotBarComponent,
-    CarouselComponent
+    CarouselComponent,
+    CarouselCardsComponent,
+    TopPicksComponent
   ],
   imports: [
     BrowserModule
