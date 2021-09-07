@@ -2,15 +2,18 @@
     a {
         text-decoration: none;
         color: white;
+        margin-left: -18px;
     }
 
     .card {
         font-size: 14px;
         margin-right: 5px;
+        margin-left: 5px;
         background-color: transparent;
         color: white;
-        width: 175px;
-        height: 287.646px;
+        width: 170px;
+        height: auto;
+        overflow: hidden;
     }
 
     .card:hover {
@@ -33,13 +36,12 @@
         width: 150px;
         height: 200px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        margin-bottom: 3px;
+        margin-left: -5px;
     }
 
     div.scrollmenu {
+        margin-left: 93px;
+        margin-right: 95px;
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
@@ -47,9 +49,29 @@
 
     div.scrollmenu div {
         display: inline-block;
-        text-align: center;
-        padding: 14px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 5px;
         text-decoration: none;
+    }
+
+    .scrollmenu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollmenu {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    p {
+        color: turquoise;
+        margin-top: 10px;
+        margin-left: -18px;
+    }
+
+    span {
+        color: gray;
     }
 </style>
 
@@ -57,42 +79,143 @@
     <h1>Top Picks for You</h1>
     <hr class="solid"
         style="background-image: linear-gradient(to right, rgb(255, 72, 0),rgb(255, 213, 73)); width: 1050px; height: 4px; margin-left: auto; margin-right: auto; opacity: unset;">
-    <ul class="nav" style="margin-left: 95px;">
-        <div class="card rounded-0">
-            <img src="../../assets/images/Mob Psycho 100.jpg" class="card-img-top rounded-0" alt="Mob Psycho">
-            <div class="card-body">
-                <a href="#" class="stretched-link">Mob Psycho 100 <p>Series ◆ Sub | Dub</p></a>
+    <div class="nav">
+        <div class="scrollmenu">
+            <div class="card rounded-0">
+                <img src="../../assets/images/Mob Psycho 100.jpg" class="card-img-top rounded-0" alt="Mob Psycho">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Mob Psycho 100 <p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Gintama.jfif" class="card-img-top rounded-0" alt="Gintama">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Gintama <p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Golden Kamuy.PNG" class="card-img-top rounded-0" alt="Golden Kamuy">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Golden Kamuy <p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Fire Force.jpg" class="card-img-top rounded-0" alt="Fire Force">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Mob Psycho 100 <p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Tonya.jpg" class="card-img-top rounded-0" alt="Tanya">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Saga of Tanya the Evil <p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Fena Pirate.jpg" class="card-img-top rounded-0"
+                    alt="Fena: Pirate Princess">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Fena: Pirate Princess<p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Berserk.jpg" class="card-img-top rounded-0"
+                    alt="Berserk">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Berserk<p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Junji Ito.jpg" class="card-img-top rounded-0"
+                    alt="Junji Ito">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Junji Ito Collection<p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Ace of the Diamond.PNG" class="card-img-top rounded-0"
+                    alt="Ace of the Diamond">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Ace of the Diamond<p>Series <span>◆ Subtitled</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Overlord.PNG" class="card-img-top rounded-0"
+                    alt="Overlord">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Overlord<p>Series <span>◆ Subtitled</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Makeruna.PNG" class="card-img-top rounded-0"
+                    alt="Makeruna">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Makeruna!! Aku no Gundan!<p>Series <span>◆ Subtitled</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Yu-Gi-Oh.PNG" class="card-img-top rounded-0"
+                    alt="Yu-Gi-Oh">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Yu-Gi-Oh!<p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/One Punch Man.PNG" class="card-img-top rounded-0"
+                    alt="One-Punch Man">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">One-Punch Man<p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/MegaloBox.PNG" class="card-img-top rounded-0"
+                    alt="MEGALOBOX">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">MEGALOBOX<p>Series <span>◆ Subtitled</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Hajime no Ippo.PNG" class="card-img-top rounded-0"
+                    alt="Hajime No Ippo">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Hajime No Ippo: The Fighting! - Rising -<p>Series <span>◆ Subtitled</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Going Home Club.PNG" class="card-img-top rounded-0"
+                    alt="Going Home Club">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Chronicles of the Going Home Club<p>Series <span>◆ Subtitled</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Million Lives.PNG" class="card-img-top rounded-0"
+                    alt="Million Lives">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">I'm Standing on a Million Lives<p>Series <span>◆ Dubbed</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/91 Days.PNG" class="card-img-top rounded-0"
+                    alt="91 Days">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">91 Days<p>Series <span>◆ Sub | Dub</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Akagi.PNG" class="card-img-top rounded-0"
+                    alt="Akagi">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Akagi (Drama)<p>Series <span>◆ Subtitled</span></p></a>
+                </div>
+            </div>
+            <div class="card rounded-0">
+                <img src="../../assets/images/Theatre.PNG" class="card-img-top rounded-0"
+                    alt="Theatre of Darkness">
+                <div class="card-body">
+                    <a href="#" class="stretched-link">Theatre of Darkness: Yamishibai<p>Series <span>◆ Subtitled</span></p></a>
+                </div>
             </div>
         </div>
-        <div class="card rounded-0">
-            <img src="../../assets/images/Gintama.jfif" class="card-img-top rounded-0" alt="Gintama">
-            <div class="card-body">
-                <a href="#" class="stretched-link">Gintama <p>Series ◆ Sub | Dub</p></a>
-            </div>
-        </div>
-        <div class="card rounded-0">
-            <img src="../../assets/images/Golden Kamuy.PNG" class="card-img-top rounded-0" alt="Golden Kamuy">
-            <div class="card-body">
-                <a href="#" class="stretched-link">Mob Psycho 100 <p>Series ◆ Sub | Dub</p></a>
-            </div>
-        </div>
-        <div class="card rounded-0">
-            <img src="../../assets/images/Fire Force.jpg" class="card-img-top rounded-0" alt="Fire Force">
-            <div class="card-body">
-                <a href="#" class="stretched-link">Mob Psycho 100 <p>Series ◆ Sub | Dub</p></a>
-            </div>
-        </div>
-        <div class="card rounded-0">
-            <img src="../../assets/images/Tonya.jpg" class="card-img-top rounded-0" alt="Tonya">
-            <div class="card-body">
-                <a href="#" class="stretched-link">Mob Psycho 100 <p>Series ◆ Sub | Dub</p></a>
-            </div>
-        </div>
-        <div class="card rounded-0">
-            <img src="../../assets/images/Fena Pirate.jpg" class="card-img-top rounded-0" alt="Fena: Pirate Princess">
-            <div class="card-body">
-                <a href="#" class="stretched-link">Fena: Pirate Princess<p>Series ◆ Sub | Dub</p></a>
-            </div>
-        </div>
-    </ul>
+    </div>
 </div>
