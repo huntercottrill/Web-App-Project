@@ -7,6 +7,7 @@ import { BotBarComponent } from './footer/bot-bar.component';
 import { CarouselComponent } from './body/carousel.component';
 import { CarouselCardsComponent } from './body/carousel-cards.component';
 import { TopPicksComponent } from './body/top-picks.component';
+import { GridLayoutComponent } from './layout/grid-layout.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TopPicksComponent } from './body/top-picks.component';
     BotBarComponent,
     CarouselComponent,
     CarouselCardsComponent,
-    TopPicksComponent
+    TopPicksComponent,
+    GridLayoutComponent
   ],
   imports: [
     BrowserModule

@@ -1,18 +1,3 @@
-/* Top Bar Component */
-a.top-bar {
-    color: rgb(216, 216, 216);
-}
-
-button.top-bar {
-    color: rgb(216, 216, 216);
-}
-
-button.top-bar:hover {
-    color: white;
-    background-color: rgb(19, 19, 19);
-}
-
-/* Top Picks Component */
 a.top-picks {
     text-decoration: none;
     color: white;

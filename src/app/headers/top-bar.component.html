@@ -1,20 +1,76 @@
 <style>
     a {
         color: rgb(216, 216, 216);
+        border-radius: 0px;
     }
 
-    button {
+    a.nav-link {
         color: rgb(216, 216, 216);
+        height: 62px;
+    }
+
+    a:hover {
+        color: white;
+        background-color: rgb(19, 19, 19);
+    }
+
+    /* a:hover img {
+                filter: brightness(500%);
+                -webkit-filter: brightness(500%);
+                -moz-filter: brightness(200%);
+                -o-filter: brightness(130%);
+                -ms-filter: brightness(130%);
+    } */
+
+    a.logo:hover {
+        color: white;
+        background-color: transparent;
+    }
+
+    button.top-bar {
+        color: rgb(216, 216, 216);
+        border-radius: 0px;
+        height: 62px;
+    }
+
+    button:hover {
+        color: white;
+        background-color: rgb(19, 19, 19);
+    }
+
+    button:focus {
+        background-color: rgb(19, 19, 19);
+        color: white;
+        border: none;
+        outline: none;
+    }
+
+    img {
+        margin: 0;
+        top: 50%;
+        -ms-transform: translateY(25%);
+        transform: translateY(25%);
+    }
+
+    p {
+        margin: 0;
+        top: 50%;
+        -ms-transform: translateY(40%);
+        transform: translateY(40%);
     }
 </style>
 
-<nav class="navbar bg-dark">
+<nav class="navbar bg-dark" style="padding-top: 0px; padding-bottom: 0px; height: 62px;">
     <ul class="nav">
-        <a class="nav-item" href="#">
-            <img src="../../assets/images/crunchyrollbeta.PNG" alt="Crunchyroll logo" style="max-width: 188px; height: auto; margin-left: 20px; margin-right: 20px;">
+        <a class="nav-item logo" href="#">
+            <img src="../../assets/images/crunchyrollbeta.PNG" alt="Crunchyroll logo"
+                style="max-width: 188px; height: auto; margin-left: 20px; margin-right: 20px;">
+            <!-- <svg width="188px" height="30px">
+                <image href="../../assets/images/Crunchyroll.svg" width="188px" height="30px" />
+            </svg> -->
         </a>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
+            <button class="btn btn-secondary dropdown-toggle btn-dark top-bar" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false" id="dropDownMenuButton1">
                 Browse
             </button>
@@ -58,16 +114,16 @@
             </ul>
         </div>
         <li class="nav-item"><a class="nav-link" href="#">
-                Manga
+                <p>Manga</p>
             </a></li>
         <li class="nav-item"><a class="nav-link" href="#">
-                Games
+                <p>Games</p>
             </a></li>
         <li class="nav-item"><a class="nav-link" href="#">
-                News
+                <p>News</p>
             </a></li>
         <li class="nav-item"><a class="nav-link" href="#">
-                Store
+                <p>Store</p>
             </a></li>
         <!-- <div>
             <button type="button" class="btn btn-dark">
@@ -95,8 +151,8 @@
 
     <ul class="nav">
         <div>
-            <button class="btn btn-lg btn-dark">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            <button class="btn btn-lg btn-dark top-bar">
+                <!-- < xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
                     <path
                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -110,7 +166,7 @@
         </div>
 
         <div>
-            <button class="btn btn-lg btn-dark">
+            <button class="btn btn-lg btn-dark top-bar">
                 <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-bookmarks" viewBox="0 0 16 16">
                     <path
@@ -127,7 +183,7 @@
         </div>
 
         <div class="nav-item dropdown">
-            <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
+            <button class="btn btn-secondary dropdown-toggle btn-dark top-bar" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false" id="dropDownMenuButton1">
                 <svg width="35" height="30">
                     <circle cx="16" cy="15" r="15" stroke-width="0" fill="white" />
