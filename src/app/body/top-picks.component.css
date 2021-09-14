@@ -38,7 +38,7 @@ img.top-picks {
     margin-left: -5px;
 }
 
-div.scrollmenu.top-picks {
+div.scrollmenu {
     margin-left: 93px;
     margin-right: 95px;
     overflow-x: auto;
@@ -46,7 +46,7 @@ div.scrollmenu.top-picks {
     white-space: nowrap;
 }
 
-div.scrollmenu.top-picks div {
+div.scrollmenu div {
     display: inline-block;
     padding-left: 14px;
     padding-right: 14px;
@@ -63,12 +63,12 @@ div.scrollmenu.top-picks div {
     scrollbar-width: none;
 }
 
-p.top-picks {
+p {
     color: turquoise;
     margin-top: 10px;
     margin-left: -18px;
 }
 
-span.top-picks {
+span {
     color: gray;
 }

@@ -1,7 +1,59 @@
-a.top-bar {
+a {
     color: rgb(216, 216, 216);
+    border-radius: 0px;
+}
+
+a.nav-link {
+    color: rgb(216, 216, 216);
+    height: 62px;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(19, 19, 19);
+}
+
+/* a:hover img {
+            filter: brightness(500%);
+            -webkit-filter: brightness(500%);
+            -moz-filter: brightness(200%);
+            -o-filter: brightness(130%);
+            -ms-filter: brightness(130%);
+} */
+
+a.logo:hover {
+    color: white;
+    background-color: transparent;
 }
 
 button.top-bar {
     color: rgb(216, 216, 216);
+    border-radius: 0px;
+    height: 62px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(19, 19, 19);
+}
+
+button:focus {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+img {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
+}
+
+p {
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(40%);
+    transform: translateY(40%);
 }
