@@ -1,40 +1,23 @@
-<style>
-    .carousel.slide {
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 30px; 
-        padding-top: 30px;
-    }
-
-    /* .carousel-control-prev-icon {
-        margin-right: 200px;
-    }
-
-    .carousel-control-next-icon {
-        margin-left: 200px;
-    } */
-</style>
-
 <div class="container-fluid" style="background-image: url(../../assets/images/Background.png);">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="width: 960px; height: auto;">
+    <div id="myCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 960px; height: auto;">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../../assets/images/Fena Crunchyroll.png" class="d-block w-100" alt="Fena">
+                <img [src]="fenaImg" [class]="carous" alt="Fena">
             </div>
             <div class="carousel-item">
-                <img src="../../assets/images/MHA Crunchyroll.png" class="d-block w-100" alt="MHA">
+                <img [src]="mhaImg" [class]="carous" alt="MHA">
             </div>
             <div class="carousel-item">
-                <img src="../../assets/images/Boruto Crunchyroll.png" class="d-block w-100" alt="Boruto">
+                <img [src]="borutoImg" [class]="carous" alt="Boruto">
             </div>
             <div class="carousel-item">
-                <img src="../../assets/images/Jujutsu Crunchyroll.jpg" class="d-block w-100" alt="Jujutsu">
+                <img [src]="jujutsuImg" [class]="carous" alt="Jujutsu">
             </div>
             <div class="carousel-item">
-                <img src="../../assets/images/TokyoRev Crunchyroll.png" class="d-block w-100" alt="Tokyo Revengers">
+                <img [src]="tokyoImg" [class]="carous" alt="Tokyo Revengers">
             </div>
             <div class="carousel-item">
-                <img src="../../assets/images/Tomo Crunchyroll.jpg" class="d-block w-100" alt="Tomo">
+                <img [src]="tomoImg" [class]="carous" alt="Tomo">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">

@@ -6,4 +6,7 @@ import { Component } from '@angular/core'
     styleUrls: ['./top-bar.component.css']
 })
 
-export class TopBarComponent {}
+export class TopBarComponent {
+    logo:String = "../../assets/images/crunchyrollbeta.PNG";
+    link:String = "nav-link h-100 rounded-0";
+}

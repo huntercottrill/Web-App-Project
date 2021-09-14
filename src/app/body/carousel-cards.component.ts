@@ -5,4 +5,6 @@ import { Component } from '@angular/core'
     templateUrl: 'carousel-cards.component.html'
 })
 
-export class CarouselCardsComponent {}
+export class CarouselCardsComponent {
+    aCard:String = "card-body stretched-link rounded-0 text-decoration-none";
+}

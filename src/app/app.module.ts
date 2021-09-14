@@ -8,6 +8,7 @@ import { CarouselComponent } from './body/carousel.component';
 import { CarouselCardsComponent } from './body/carousel-cards.component';
 import { TopPicksComponent } from './body/top-picks.component';
 import { GridLayoutComponent } from './layout/grid-layout.component';
+import { CarouselLayoutComponent } from './layout/carousel-layout.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GridLayoutComponent } from './layout/grid-layout.component';
     CarouselComponent,
     CarouselCardsComponent,
     TopPicksComponent,
-    GridLayoutComponent
+    GridLayoutComponent,
+    CarouselLayoutComponent
   ],
   imports: [
     BrowserModule

@@ -28,6 +28,8 @@ export class TopPicksComponent {
     akagiImg:String = "../../assets/images/Akagi.PNG";
     theatreImg:String = "../../assets/images/Theatre.PNG";
 
+    imgCard:String = "card-img-top rounded-0 top-picks";
+
     cardProperties(id: string, image: string, alternative: string, name: string, seriesMovie: string, subDub: string) {
         const card = document.getElementById(id);
 
