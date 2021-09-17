@@ -9,6 +9,7 @@ import { CarouselCardsComponent } from './body/carousel-cards.component';
 import { TopPicksComponent } from './body/top-picks.component';
 import { FlexLayoutComponent } from './layout/flex-layout.component';
 import { CarouselLayoutComponent } from './layout/carousel-layout.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CarouselLayoutComponent } from './layout/carousel-layout.component';
     CarouselLayoutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
