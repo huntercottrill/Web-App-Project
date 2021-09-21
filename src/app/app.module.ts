@@ -16,6 +16,9 @@ import { MyListsComponent } from './lists/mylists.component';
 import { WatchlistLayoutComponent } from './lists/watchlist-layout.component';
 import { PopularLayoutComponent } from './browse/popular-layout.component';
 import { PopularComponent } from './browse/popular.component';
+import { CrunchylistsComponent } from './lists/crunchylists.component';
+import { SimulcastLayoutComponent } from './browse/simulcast-layout.component';
+import { SimulcastComponent } from './browse/simulcast.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { PopularComponent } from './browse/popular.component';
     MyListsComponent,
     WatchlistLayoutComponent,
     PopularComponent,
-    PopularLayoutComponent
+    PopularLayoutComponent,
+    CrunchylistsComponent,
+    SimulcastLayoutComponent,
+    SimulcastComponent
   ],
   imports: [
     BrowserModule,

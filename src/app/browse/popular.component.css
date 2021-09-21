@@ -1,0 +1,21 @@
+p {
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    color: gray;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+button:hover,button:focus {
+    background-color: rgb(17, 17, 17);
+    filter: brightness(200%);
+    -webkit-filter: brightness(200%);
+    -moz-filter: brightness(200%);
+    -o-filter: brightness(200%);
+    -ms-filter: brightness(200%);
+}
