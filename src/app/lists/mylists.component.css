@@ -1,0 +1,26 @@
+button {
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+
+button:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+button:focus {
+    border-bottom: 4px solid rgb(255, 136, 0);
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    border-bottom: 6px solid rgb(255, 136, 0);
+    background-color: black;
+}
+
+hr {
+    height: 2px;
+    color: white;
+}

@@ -1,58 +1,60 @@
 <nav class="navbar bg-dark py-0" style="height: 62px;">
     <ul class="nav h-100">
-        <a class="nav-item logo" href="#">
+        <a class="nav-item logo" routerLink="">
             <img [src]="logo" alt="Crunchyroll logo"
                 style="max-width: 188px; height: auto; margin-left: 20px; margin-right: 20px;">
-            <!-- <svg width="188px" height="30px">
-                <image href="../../assets/images/Crunchyroll.svg" width="188px" height="30px" />
-            </svg> -->
         </a>
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle btn-dark top-bar border-0 h-100" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false" id="dropDownMenuButton1">
+            <button class="btn btn-secondary dropdown-toggle btn-dark top-bar border-0 h-100 rounded-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false" id="dropDownMenuButton1" routerLink="">
                 Browse
             </button>
 
-            <ul class="dropdown-menu multi-column dropdown-menu-dark min-vw-100" style="z-index: 9999;"
+            <ul class="dropdown-menu top-bar multi-column dropdown-menu-dark rounded-0" style="z-index: 9999;"
                 aria-labelledby="dropDownMenuButton1">
-                <!-- <div class="container dropdown-menu w-100"> -->
-                <div class="row">
-                    <div class="col-2">
-                        <li><a class="dropdown-item" href="#">Popular</a></li>
-                        <li><a class="dropdown-item" href="#">New</a></li>
-                        <li><a class="dropdown-item" href="#">Alphabetical</a></li>
-                        <li><a class="dropdown-item" href="#">Originals</a></li>
-                        <li><a class="dropdown-item" href="#">Simulcast Season</a></li>
-                        <li><a class="dropdown-item" href="#">Release Calendar</a></li>
+                <div class="row ps-5 ms-5">
+                    <div class="col-2 py-4">
+                        <li><a [class]="browse" routerLink="videos/popular">Popular</a></li>
+                        <li><a [class]="browse" href="#">New</a></li>
+                        <li><a [class]="browse" href="#">Alphabetical</a></li>
+                        <li><a [class]="browse" href="#">Originals</a></li>
+                        <li><a [class]="browse" href="#">Simulcast Season</a></li>
+                        <li><a [class]="browse" href="#">Release Calendar</a></li>
                     </div>
-                    <div class="col-1"></div>
-                    <div class="col-2">
-                        <li><a class="dropdown-item" href="#">GENRES</a></li>
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Adventure</a></li>
-                        <li><a class="dropdown-item" href="#">Comedy</a></li>
-                        <li><a class="dropdown-item" href="#">Drama</a></li>
-                        <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                    <div class="col-1 py-4">
+                        <div class="vertical h-75 my-auto"></div>
                     </div>
-                    <div class="col-2">
-                        <li></li>
-                        <li><a class="dropdown-item" href="#">Music</a></li>
-                        <li><a class="dropdown-item" href="#">Romance</a></li>
-                        <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
-                        <li><a class="dropdown-item" href="#">Seinen</a></li>
-                        <li><a class="dropdown-item" href="#">Shojo</a></li>
-                    </div>
-                    <div class="col-2">
-                        <li></li>
-                        <li><a class="dropdown-item" href="#">Shonen</a></li>
-                        <li><a class="dropdown-item" href="#">Slice of life</a></li>
-                        <li><a class="dropdown-item" href="#">Sports</a></li>
-                        <li><a class="dropdown-item" href="#">Supernatural</a></li>
-                        <li><a class="dropdown-item" href="#">Thriller</a></li>
+                    <div class="col-6 py-4">
+                        <div class="row w-100 px-0 py-2">GENRES</div>
+                        <div class="row w-100 px-0 py-0">
+                            <div class="col-4">
+                                <!-- <li><h6 class="text-start">GENRES</h6></li> -->
+                                <li><a [class]="browse" href="#">Action</a></li>
+                                <li><a [class]="browse" href="#">Adventure</a></li>
+                                <li><a [class]="browse" href="#">Comedy</a></li>
+                                <li><a [class]="browse" href="#">Drama</a></li>
+                                <li><a [class]="browse" href="#">Fantasy</a></li>
+                            </div>
+                            <div class="col-4">
+                                <li></li>
+                                <li><a [class]="browse" href="#">Music</a></li>
+                                <li><a [class]="browse" href="#">Romance</a></li>
+                                <li><a [class]="browse" href="#">Sci-Fi</a></li>
+                                <li><a [class]="browse" href="#">Seinen</a></li>
+                                <li><a [class]="browse" href="#">Shojo</a></li>
+                            </div>
+                            <div class="col-4">
+                                <li></li>
+                                <li><a [class]="browse" href="#">Shonen</a></li>
+                                <li><a [class]="browse" href="#">Slice of life</a></li>
+                                <li><a [class]="browse" href="#">Sports</a></li>
+                                <li><a [class]="browse" href="#">Supernatural</a></li>
+                                <li><a [class]="browse" href="#">Thriller</a></li>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </ul>
-            <!-- </div> -->
         </div>
         <li class="nav-item"><a [class]="link" href="#">
                 <p>Manga</p>
@@ -61,43 +63,16 @@
                 <p>Games</p>
             </a></li>
         <li class="nav-item"><a [class]="link" href="#">
-                <p>News</p>
-            </a></li>
-        <li class="nav-item"><a [class]="link" href="#">
                 <p>Store</p>
             </a></li>
-        <!-- <div>
-            <button type="button" class="btn btn-dark">
-                <li class="nav-item"><a class="nav-link text-white" href="#">
-                        Manga
-                    </a></li>
-            </button>
-            <button type="button" class="btn btn-dark">
-                <li class="nav-item"><a class="nav-link text-white" href="#">
-                        Games
-                    </a></li>
-            </button>
-            <button type="button" class="btn btn-dark">
-                <li class="nav-item"><a class="nav-link text-white" href="#">
-                        News
-                    </a></li>
-            </button>
-            <button type="button" class="btn btn-dark">
-                <li class="nav-item"><a class="nav-link text-white" href="#">
-                        Store
-                    </a></li>
-            </button>
-        </div> -->
+        <li class="nav-item"><a [class]="link" href="#">
+                <p>News</p>
+            </a></li>
     </ul>
 
     <ul class="nav h-100">
-        <button class="btn btn-lg btn-dark top-bar border-0 h-100">
-            <!-- < xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg> -->
-            <a href="#">
+        <button class="btn btn-lg btn-dark top-bar border-0 h-100 rounded-0">
+            <a routerLink="/search">
                 <svg class="bi" width="20" height="20" color="white">
                     <use xlink:href="bootstrap-icons.svg#search"></use>
                 </svg>
@@ -106,89 +81,22 @@
 
 
 
-        <button class="btn btn-lg btn-dark top-bar border-0 pt-0 pb-0 h-100">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-bookmarks" viewBox="0 0 16 16">
-                    <path
-                        d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z" />
-                    <path
-                        d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z" />
-                </svg> -->
-            <a href="#">
+        <button class="btn btn-lg btn-dark top-bar border-0 pt-0 pb-0 h-100 rounded-0">
+            <a routerLink="watchlist">
                 <svg class="bi" width="20" height="20" color="white">
                     <use xlink:href="bootstrap-icons.svg#bookmark"></use>
                 </svg>
             </a>
         </button>
 
-
         <div class="nav-item dropdown h-100">
-            <button class="btn btn-secondary dropdown-toggle btn-dark top-bar border-0 py-0 h-100" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false" id="dropDownMenuButton1">
+            <button class="btn btn-secondary dropdown-toggle btn-dark top-bar border-0 py-0 h-100 rounded-0"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropDownMenuButton1">
                 <svg width="35" height="30">
                     <circle cx="16" cy="15" r="15" stroke-width="0" fill="white" />
                 </svg>
             </button>
 
-            <!-- <div class="dropdown-menu dropdown-menu-end vh-100 border-0 p-0 rounded-0"
-                style="z-index: 9999; width: 388;">
-                <div style="width: 380.333px; overflow:auto;">
-                    <button class="dropdown-item text-white w-100" type="button">Username</button>
-                    <div class="dropdown-divider"></div>
-                    <button class="dropdown-item text-white" type="button">Watchlist</button>
-                    <button class="dropdown-item text-white" type="button">Crunchylists</button>
-                    <button class="dropdown-item text-white" type="button">History</button>
-                    <div class="dropdown-divider"></div>
-                    <button class="dropdown-item text-white" type="button">MyAccount</button>
-                    <div class="dropdown-divider"></div>
-                    <button class="dropdown-item text-white" type="button">LeaveFeedback</button>
-                </div>
-                <div class="dropdown-divider"></div>
-                <button class="dropdown-item text-white" type="button">LogOut</button>
-            </div> -->
-            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
-                <svg width="35" height="30">
-                    <circle cx="16" cy="15" r="15" stroke-width="0" fill="white" />
-                </svg>
-            </button>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-                aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="dropdown-menu dropdown-menu-end vh-100 border-0 p-0 rounded-0"
-                        style="z-index: 9999; width: 388;">
-                        <div class="scrollmenu">
-                            <li>
-                                <h6 class="dropdown-header">Username</h6>
-                            </li>
-                            <div class="dropdown-divider"></div>
-                            <li class="dropdown-item text-white"><a href="#">Watchlist</a></li>
-                            <li class="dropdown-item text-white"><a href="#">Crunchylists</a></li>
-                            <li class="dropdown-item text-white"><a href="#">History</a></li>
-                            <div class="dropdown-divider"></div>
-                            <li class="dropdown-item text-white"><a href="#">MyAccount</a></li>
-                            <div class="dropdown-divider"></div>
-                            <li class="dropdown-item text-white"><a href="#">LeaveFeedback</a></li>
-                        </div>
-                    </ul> -->
-                    <!-- <div class="dropdown mt-3">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-bs-toggle="dropdown">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div> -->
-                <!-- </div> -->
-            <!-- </div> -->
             <ul class="dropdown-menu dropdown-menu-end vh-100 border-0 p-0 rounded-0"
                 style="z-index: 9999; width: 388;">
                 <div class="scrollmenu">

@@ -10,6 +10,12 @@ import { TopPicksComponent } from './body/top-picks.component';
 import { FlexLayoutComponent } from './layout/flex-layout.component';
 import { CarouselLayoutComponent } from './layout/carousel-layout.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SearchComponent } from './body/search-page.component';
+import { SearchLayoutComponent } from './body/search-layout.component';
+import { MyListsComponent } from './lists/mylists.component';
+import { WatchlistLayoutComponent } from './lists/watchlist-layout.component';
+import { PopularLayoutComponent } from './browse/popular-layout.component';
+import { PopularComponent } from './browse/popular.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { AppRoutingModule } from './app-routing.module';
     CarouselCardsComponent,
     TopPicksComponent,
     FlexLayoutComponent,
-    CarouselLayoutComponent
+    CarouselLayoutComponent,
+    SearchComponent,
+    SearchLayoutComponent,
+    MyListsComponent,
+    WatchlistLayoutComponent,
+    PopularComponent,
+    PopularLayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -30,3 +42,4 @@ import { AppRoutingModule } from './app-routing.module';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

@@ -11,14 +11,6 @@ a:hover {
     background-color: rgb(19, 19, 19);
 }
 
-/* a:hover img {
-            filter: brightness(500%);
-            -webkit-filter: brightness(500%);
-            -moz-filter: brightness(200%);
-            -o-filter: brightness(130%);
-            -ms-filter: brightness(130%);
-} */
-
 a.logo:hover {
     color: white;
     background-color: transparent;
@@ -40,8 +32,15 @@ button:focus {
     outline: none;
 }
 
+button:active {
+    background-color: rgb(19, 19, 19);
+    border: none;
+    outline: none;
+}
+
 .dropdown-menu {
     background-color: rgb(20, 20, 20);
+    margin-top: -2px;
 }
 
 .dropdown-item:hover {
@@ -60,4 +59,28 @@ p {
     top: 50%;
     -ms-transform: translateY(40%);
     transform: translateY(40%);
+}
+
+.nav { 
+    margin-bottom: 0; 
+}
+
+.dropdown { 
+    position: static;
+}
+
+ul.top-bar { 
+    width: 101%; 
+    text-align: center;
+    margin-left: -5px;
+    font-size: .875rem;
+}
+
+ul.top-bar>li { 
+    display: inline-block;
+}
+
+.vertical {
+    border-left: 1.5px solid rgb(44, 44, 44);
+    position: absolute;
 }
