@@ -4,7 +4,7 @@ p {
 
 button {
     background-color: transparent;
-    color: gray;
+    color: #a0a0a0;
 }
 
 button:hover,button:focus {

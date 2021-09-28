@@ -19,6 +19,13 @@ import { PopularComponent } from './browse/popular.component';
 import { CrunchylistsComponent } from './lists/crunchylists.component';
 import { SimulcastLayoutComponent } from './browse/simulcast-layout.component';
 import { SimulcastComponent } from './browse/simulcast.component';
+import { CardBuildComponent } from './body/card-builder.component';
+import { PopularCardsComponent } from './browse/popular-cards.component';
+import { PopularNavComponent } from './browse/popular-nav.component';
+import { SimulcastCardsComponent } from './browse/simulcast-cards.component';
+import { ActionComponent } from './browse/action.component';
+import { ActionCardsComponent } from './browse/action-cards.component';
+import { ActionLayoutComponent } from './browse/action-layout.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +45,14 @@ import { SimulcastComponent } from './browse/simulcast.component';
     PopularLayoutComponent,
     CrunchylistsComponent,
     SimulcastLayoutComponent,
-    SimulcastComponent
+    SimulcastComponent,
+    CardBuildComponent,
+    PopularCardsComponent,
+    PopularNavComponent,
+    SimulcastCardsComponent,
+    ActionComponent,
+    ActionCardsComponent,
+    ActionLayoutComponent
   ],
   imports: [
     BrowserModule,

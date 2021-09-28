@@ -1,16 +1,5 @@
-h1.top-picks {
-    color: white;
-    margin-left: 105px;
-    font-size: 30px;
-}
-
-hr.top-picks {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 div.scrollmenu {
-    margin-left: 93px;
+    margin-left: 80px;
     margin-right: 95px;
     overflow-x: auto;
     overflow-y: hidden;

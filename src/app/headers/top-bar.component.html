@@ -6,7 +6,7 @@
         </a>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle btn-dark top-bar border-0 h-100 rounded-0" type="button"
-                data-bs-toggle="dropdown" aria-expanded="false" id="dropDownMenuButton1" routerLink="">
+                data-bs-toggle="dropdown" aria-expanded="false" id="dropDownMenuButton1">
                 Browse
             </button>
 
@@ -28,8 +28,7 @@
                         <div class="row w-100 px-0 py-2">GENRES</div>
                         <div class="row w-100 px-0 py-0">
                             <div class="col-4">
-                                <!-- <li><h6 class="text-start">GENRES</h6></li> -->
-                                <li><a [class]="browse" href="#">Action</a></li>
+                                <li><a [class]="browse" routerLink="videos/action">Action</a></li>
                                 <li><a [class]="browse" href="#">Adventure</a></li>
                                 <li><a [class]="browse" href="#">Comedy</a></li>
                                 <li><a [class]="browse" href="#">Drama</a></li>
@@ -97,23 +96,58 @@
                 </svg>
             </button>
 
-            <ul class="dropdown-menu dropdown-menu-end vh-100 border-0 p-0 rounded-0"
-                style="z-index: 9999; width: 388;">
+            <ul id="username" class="dropdown-menu dropdown-menu-end vh-100 border-0 p-0 rounded-0"
+                style="z-index: 9998; width: 388;">
                 <div class="scrollmenu">
-                    <li>
-                        <h6 class="dropdown-header">Username</h6>
-                    </li>
-                    <div class="dropdown-divider"></div>
-                    <li class="dropdown-item text-white"><a href="#">Watchlist</a></li>
-                    <li class="dropdown-item text-white"><a href="#">Crunchylists</a></li>
-                    <li class="dropdown-item text-white"><a href="#">History</a></li>
-                    <div class="dropdown-divider"></div>
-                    <li class="dropdown-item text-white"><a href="#">MyAccount</a></li>
-                    <div class="dropdown-divider"></div>
-                    <li class="dropdown-item text-white"><a href="#">LeaveFeedback</a></li>
+                    <li><h6 class="dropdown-header fs-5">
+                            <svg width="50" height="50">
+                                <circle cx="20" cy="30" r="20" stroke-width="0" fill="white" />
+                            </svg>
+                            Username
+                    </h6></li>
+                    <div class="dropdown-divider bg-dark"></div>
+                    <li id="vids" class="dropdown-item"><a class="text-decoration-none" href="#">
+                            <svg class="bi mx-2" width="20" height="20" color="white">
+                                <use xlink:href="bootstrap-icons.svg#bookmark"></use>
+                            </svg>
+                            Watchlist
+                        </a></li>
+                    <li id="vids" class="dropdown-item"><a class="text-decoration-none" href="#">
+                            <svg class="bi mx-2" width="20" height="20" color="white">
+                                <use xlink:href="bootstrap-icons.svg#list-ul"></use>
+                            </svg>
+                            Crunchylists
+                        </a></li>
+                    <li id="vids" class="dropdown-item"><a class="text-decoration-none" href="#">
+                            <svg class="bi mx-2" width="20" height="20" color="white">
+                                <use xlink:href="bootstrap-icons.svg#clock-history"></use>
+                            </svg>
+                            History
+                        </a></li>
+                    <div class="dropdown-divider bg-dark"></div>
+                    <li id="account" class="dropdown-item"><a class="text-decoration-none" href="#">
+                            <svg class="bi mx-2" width="20" height="20" color="white">
+                                <use xlink:href="bootstrap-icons.svg#person"></use>
+                            </svg>
+                            My Account<br><p id="sub">Manage your profile and settings.</p>
+                        </a></li>
+                    <div class="dropdown-divider bg-dark"></div>
+                    <li id="feedback" class="dropdown-item"><a class="text-decoration-none" href="#">
+                            <svg class="bi mx-2" width="20" height="20" color="white">
+                                <use xlink:href="bootstrap-icons.svg#chat-square-dots"></use>
+                            </svg>
+                            Leave Feedback<br><p id="sub">We'd love to know what you think of the<br>Crunchyroll Beta</p>
+                        </a></li>
                 </div>
+                <div class="dropdown-divider bg-dark"></div>
+                <li id="logout" class="dropdown-item mt-4"><a class="text-decoration-none" href="#">
+                        <svg class="bi mx-2" width="20" height="20" color="white">
+                            <use xlink:href="bootstrap-icons.svg#box-arrow-right"></use>
+                        </svg>
+                        Log Out
+                </a></li>
             </ul>
-            <ul class="dropdown-menu multi-column dropdown-menu-dark" style="border: 100px;"
+            <!-- <ul class="dropdown-menu multi-column dropdown-menu-dark" style="border: 100px;"
                 aria-labelledby="dropDownMenuButton1">
                 <li><a class="text-white" href="#"><img src="">Username</a></li>
                 <div class="dropdown-divider"></div>
@@ -125,7 +159,7 @@
                 <div class="dropdown-divider"></div>
                 <li><a class="text-white" href="#">Leave Feedback</a></li>
                 <li><a class="text-white" href="#"><img src="images/logout.png">Log Out</a></li>
-            </ul>
+            </ul> -->
         </div>
     </ul>
 </nav>

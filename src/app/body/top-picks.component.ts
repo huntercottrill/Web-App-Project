@@ -1,4 +1,6 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
+import { SeriesCard } from './series-card.model';
+import { card_info } from './card-info.component';
 
 @Component({
     selector: 'app-top-picks',
@@ -30,43 +32,51 @@ export class TopPicksComponent {
 
     imgCard:String = "card-img-top rounded-0 top-picks";
 
-    cardProperties(id: string, image: string, alternative: string, name: string, seriesMovie: string, subDub: string) {
-        const card = document.getElementById(id);
+    cards:SeriesCard[] = [];
 
-        const img = document.createElement("img");
-
-        const div = document.createElement("div");
-
-        const a = document.createElement("a");
-
-        const p = document.createElement("p");
-
-        const span = document.createElement("span");
-
-        img.setAttribute('src', image);
-        img.setAttribute('class', "card-img-top rounded-0");
-        img.setAttribute('alt', alternative);
-        img.setAttribute('style', "width:150px;height:200px;display:block;margin-left:-5px");
-        
-        div.setAttribute('class', "card-body");
-
-        a.setAttribute('href', "#");
-        a.setAttribute('class', "stretched-link");
-        a.setAttribute('style', "text-decoration:none;color:white;margin-left:-18px");
-        a.textContent = name;
-
-        p.setAttribute('style', "color:turquoise;margin-top:10px;margin-left:-18px");
-        p.textContent = seriesMovie;
-
-        span.setAttribute('style', "color:gray");
-        span.textContent = subDub;
-
-        p.appendChild(span);
-        a.appendChild(p);
-        div.appendChild(a);
-        card?.append(img, div);
-        // div.appendChild(a);
-        // a.appendChild(p);
-        // p.appendChild(span);
+    constructor() {
+        for (var card of card_info) {
+            this.cards.push(new SeriesCard(card));
+        }
     }
+
+    // cardProperties(id: string, image: string, alternative: string, name: string, seriesMovie: string, subDub: string) {
+    //     const card = document.getElementById(id);
+
+    //     const img = document.createElement("img");
+
+    //     const div = document.createElement("div");
+
+    //     const a = document.createElement("a");
+
+    //     const p = document.createElement("p");
+
+    //     const span = document.createElement("span");
+
+    //     img.setAttribute('src', image);
+    //     img.setAttribute('class', "card-img-top rounded-0");
+    //     img.setAttribute('alt', alternative);
+    //     img.setAttribute('style', "width:150px;height:200px;display:block;margin-left:-5px");
+        
+    //     div.setAttribute('class', "card-body");
+
+    //     a.setAttribute('href', "#");
+    //     a.setAttribute('class', "stretched-link");
+    //     a.setAttribute('style', "text-decoration:none;color:white;margin-left:-18px");
+    //     a.textContent = name;
+
+    //     p.setAttribute('style', "color:turquoise;margin-top:10px;margin-left:-18px");
+    //     p.textContent = seriesMovie;
+
+    //     span.setAttribute('style', "color:gray");
+    //     span.textContent = subDub;
+
+    //     p.appendChild(span);
+    //     a.appendChild(p);
+    //     div.appendChild(a);
+    //     card?.append(img, div);
+    //     // div.appendChild(a);
+    //     // a.appendChild(p);
+    //     // p.appendChild(span);
+    // }
 }

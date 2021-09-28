@@ -6,10 +6,13 @@ import { WatchlistLayoutComponent } from './lists/watchlist-layout.component';
 import { PopularLayoutComponent } from './browse/popular-layout.component';
 import { CrunchylistsComponent } from './lists/crunchylists.component';
 import { SimulcastLayoutComponent } from './browse/simulcast-layout.component';
+import { ActionLayoutComponent } from './browse/action-layout.component';
+import { Action } from 'rxjs/internal/scheduler/Action';
 
 const routes: Routes = [
   { path: 'videos/popular', component: PopularLayoutComponent },
   { path: 'simulcasts/seasons/summer-2021', component: SimulcastLayoutComponent },
+  { path: 'videos/action', component: ActionLayoutComponent },
   { path: 'search', component: SearchLayoutComponent },
   { path: 'watchlist', component: WatchlistLayoutComponent },
   { path: 'crunchylists', component: CrunchylistsComponent, outlet: 'mylists' }, 

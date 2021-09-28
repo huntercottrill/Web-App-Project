@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: -18px;
+}
+
+.card {
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: transparent;
+    color: white;
+    width: 170px;
+    height: auto;
+    overflow: hidden;
+    display: inline-block;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+.card:hover {
+    filter: brightness(105%);
+    background-color: rgb(19, 19, 19);
+}
+
+p {
+    color: turquoise;
+    margin-top: 10px;
+    margin-left: -18px;
+}
+
+span {
+    color: gray;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+    display: block;
+    margin-left: -5px;
+}

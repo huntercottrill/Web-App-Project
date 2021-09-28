@@ -1,0 +1,16 @@
+button {
+    background-color: transparent;
+    color: #a0a0a0;
+}
+
+button:hover {
+    color: white;
+}
+
+p {
+    margin-left: -10px;
+}
+
+svg {
+    margin-top: -3px;
+}

@@ -1,12 +1,15 @@
 <div class="container-fluid px-0 ps-0">
     <div class="row">
         <app-top-bar></app-top-bar>
-        <router-outlet></router-outlet>
     </div>
+    <div class="row fixed-top">
+        <app-top-bar></app-top-bar>
+    </div>
+    <router-outlet></router-outlet>
     <div class="row" style="background-image: url(../../assets/images/Background.png);">
         <app-carousel></app-carousel>
     </div>
-    <div class="row pt-3 px-3" style="background-color: black;">
+    <div class="row pt-3" style="background-color: black;">
         <app-carousel-cards></app-carousel-cards>
     </div>
     <div class="row">

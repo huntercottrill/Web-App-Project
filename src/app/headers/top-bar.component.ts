@@ -11,6 +11,7 @@ export class TopBarComponent {
     link:String = "nav-link h-100 rounded-0";
 
     browse:String = "dropdown-item text-start py-2";
+    browse2:String = "dropdown-item text-start py-2 top-bar"
 
     // constructor(private router: Router) { }
 
