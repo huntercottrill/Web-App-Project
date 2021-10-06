@@ -1,4 +1,4 @@
-/* Top Bar Component */
+/* Top Bar Component
 a.top-bar {
     color: rgb(216, 216, 216);
 }
@@ -13,7 +13,7 @@ button.top-bar:hover {
 }
 
 /* Top Picks Component */
-a.top-picks {
+/* a.top-picks {
     text-decoration: none;
     color: white;
     margin-left: -18px;
@@ -86,4 +86,4 @@ p.top-picks {
 
 span.top-picks {
     color: gray;
-}
+} */

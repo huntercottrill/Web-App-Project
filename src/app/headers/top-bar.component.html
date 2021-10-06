@@ -56,16 +56,16 @@
             </ul>
         </div>
         <li class="nav-item"><a [class]="link" href="#">
-                <p>Manga</p>
+                <p class="top-bar">Manga</p>
             </a></li>
         <li class="nav-item"><a [class]="link" href="#">
-                <p>Games</p>
+                <p class="top-bar">Games</p>
             </a></li>
         <li class="nav-item"><a [class]="link" href="#">
-                <p>Store</p>
+                <p class="top-bar">Store</p>
             </a></li>
         <li class="nav-item"><a [class]="link" href="#">
-                <p>News</p>
+                <p class="top-bar">News</p>
             </a></li>
     </ul>
 
@@ -99,12 +99,16 @@
             <ul id="username" class="dropdown-menu dropdown-menu-end vh-100 border-0 p-0 rounded-0"
                 style="z-index: 9998; width: 388;">
                 <div class="scrollmenu">
-                    <li><h6 class="dropdown-header fs-5">
+                    <li>
+                        <h6 class="dropdown-header fs-5">
+                            <p *ngIf="myInfo == undefined">Failed fetching user info</p>
+                            <p class="text-white" *ngIf="myInfo != undefined">
                             <svg width="50" height="50">
                                 <circle cx="20" cy="30" r="20" stroke-width="0" fill="white" />
                             </svg>
-                            Username
-                    </h6></li>
+                            {{myInfo.FirstName}}{{myInfo.LastName}}</p>
+                        </h6>
+                    </li>
                     <div class="dropdown-divider bg-dark"></div>
                     <li id="vids" class="dropdown-item"><a class="text-decoration-none" href="#">
                             <svg class="bi mx-2" width="20" height="20" color="white">
@@ -129,14 +133,16 @@
                             <svg class="bi mx-2" width="20" height="20" color="white">
                                 <use xlink:href="bootstrap-icons.svg#person"></use>
                             </svg>
-                            My Account<br><p id="sub">Manage your profile and settings.</p>
+                            My Account<br>
+                            <p id="sub">Manage your profile and settings.</p>
                         </a></li>
                     <div class="dropdown-divider bg-dark"></div>
                     <li id="feedback" class="dropdown-item"><a class="text-decoration-none" href="#">
                             <svg class="bi mx-2" width="20" height="20" color="white">
                                 <use xlink:href="bootstrap-icons.svg#chat-square-dots"></use>
                             </svg>
-                            Leave Feedback<br><p id="sub">We'd love to know what you think of the<br>Crunchyroll Beta</p>
+                            Leave Feedback<br>
+                            <p id="sub">We'd love to know what you think of the<br>Crunchyroll Beta</p>
                         </a></li>
                 </div>
                 <div class="dropdown-divider bg-dark"></div>
@@ -145,21 +151,8 @@
                             <use xlink:href="bootstrap-icons.svg#box-arrow-right"></use>
                         </svg>
                         Log Out
-                </a></li>
+                    </a></li>
             </ul>
-            <!-- <ul class="dropdown-menu multi-column dropdown-menu-dark" style="border: 100px;"
-                aria-labelledby="dropDownMenuButton1">
-                <li><a class="text-white" href="#"><img src="">Username</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="text-white" href="#">Watchlist</a></li>
-                <li><a class="text-white" href="#">Crunchylists</a></li>
-                <li><a class="text-white" href="#">History</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="text-white" href="#">My Account</a></li>
-                <div class="dropdown-divider"></div>
-                <li><a class="text-white" href="#">Leave Feedback</a></li>
-                <li><a class="text-white" href="#"><img src="images/logout.png">Log Out</a></li>
-            </ul> -->
         </div>
     </ul>
 </nav>

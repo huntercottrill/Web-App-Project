@@ -26,6 +26,9 @@ import { SimulcastCardsComponent } from './browse/simulcast-cards.component';
 import { ActionComponent } from './browse/action.component';
 import { ActionCardsComponent } from './browse/action-cards.component';
 import { ActionLayoutComponent } from './browse/action-layout.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './body/user-info.component';
+import { UserNameComponent } from './body/username.component';
 
 @NgModule({
   declarations: [
@@ -52,11 +55,14 @@ import { ActionLayoutComponent } from './browse/action-layout.component';
     SimulcastCardsComponent,
     ActionComponent,
     ActionCardsComponent,
-    ActionLayoutComponent
+    ActionLayoutComponent,
+    UserInfoComponent,
+    UserNameComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
