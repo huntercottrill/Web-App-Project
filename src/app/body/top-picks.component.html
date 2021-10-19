@@ -4,7 +4,7 @@
         style="background-image: linear-gradient(to right, rgb(255, 72, 0),rgb(255, 213, 73)); width: 1050px; height: 4px; margin-left: auto; margin-right: auto; opacity: unset;">
     <div class="nav">
         <div class="scrollmenu">
-            <div *ngFor="let card of cards;">
+            <div *ngFor="let card of cardInfo">
                 <card-build title={{card.title}} type={{card.type}} subDub={{card.subDub}} imagePath={{card.imagePath}}>
                     Loading card
                 </card-build>
