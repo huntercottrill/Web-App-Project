@@ -4,7 +4,8 @@ import { List } from './list.model';
 
 @Component({
     selector: 'popup',
-    templateUrl: 'popup.component.html'
+    templateUrl: 'popup.component.html',
+    styleUrls: ['popup.component.css']
 })
 
 export class PopupComponent {

@@ -1,0 +1,55 @@
+.btn {
+    background-color: rgb(255, 115, 0);
+}
+
+.container-fluid {
+    background-color: black;
+}
+
+.form-outline {
+    width: 85% !important;
+}
+
+.form-control:focus {
+    border-color: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input {
+    background-color: rgb(19, 19, 19);
+    border-color: gray !important;
+    font-weight: 600;
+    color: white;
+}
+
+input:focus {
+    background-color: rgb(19, 19, 19);
+    border-color: rgb(255, 136, 0) !important;
+    color: white;
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {  
+    display: none; 
+    width : 0; 
+    height: 0; 
+}
+
+input[type=search]::-ms-reveal { 
+    display: none; 
+    width : 0; 
+    height: 0; 
+}
+   
+   /* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { 
+   display: none; 
+}
+
+.input-group-text {
+    background-color: black;
+}
