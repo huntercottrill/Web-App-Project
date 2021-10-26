@@ -11,7 +11,10 @@ export class CardInfoService {
     }
 
     getCardInfo() {
-        console.log(this.baseUrl + this.cardInfoEndpoint);
-        return this.http.get<CardInfo[]>(this.baseUrl + this.cardInfoEndpoint);
+        console.log('GETting: ' + this.baseUrl + this.cardInfoEndpoint);
+        let cardInfo = this.http.get<CardInfo[]>(
+          this.baseUrl + this.cardInfoEndpoint
+        );
+        return cardInfo;
     }
 }

@@ -55,16 +55,16 @@
                 </div>
             </ul>
         </div>
-        <li class="nav-item"><a [class]="link" href="#">
+        <li class="nav-item"><a [class]="link" class="left" href="#">
                 <p class="top-bar">Manga</p>
             </a></li>
-        <li class="nav-item"><a [class]="link" href="#">
+        <li class="nav-item"><a [class]="link" class="left" href="#">
                 <p class="top-bar">Games</p>
             </a></li>
-        <li class="nav-item"><a [class]="link" href="#">
+        <li class="nav-item"><a [class]="link" class="left" href="#">
                 <p class="top-bar">Store</p>
             </a></li>
-        <li class="nav-item"><a [class]="link" href="#">
+        <li class="nav-item"><a [class]="link" class="left" href="#">
                 <p class="top-bar">News</p>
             </a></li>
     </ul>
@@ -98,15 +98,17 @@
 
             <ul id="username" class="dropdown-menu dropdown-menu-end vh-100 border-0 p-0 rounded-0"
                 style="z-index: 9998; width: 388;">
-                <div class="scrollmenu">
+                <div class="scrollmenu" style="height: 450px; overflow-y: auto;">
                     <li>
-                        <h6 class="dropdown-header fs-5">
-                            <p *ngIf="myInfo == undefined">Failed fetching user info</p>
-                            <p class="text-white" *ngIf="myInfo != undefined">
+                        <h6 class="dropdown-header fs-5" *ngIf="login == undefined"></h6>
+                        <h6 class="dropdown-header fs-5" *ngIf="login != undefined">
+                            <p>
                             <svg width="50" height="50">
                                 <circle cx="20" cy="30" r="20" stroke-width="0" fill="white" />
                             </svg>
-                            {{myInfo.FirstName}}{{myInfo.LastName}}</p>
+                            {{login.username}}</p>
+                            <p class="email">{{login.email}}</p>
+                            <p class="email">{{login.firstName}}</p>
                         </h6>
                     </li>
                     <div class="dropdown-divider bg-dark"></div>
@@ -129,7 +131,7 @@
                             History
                         </a></li>
                     <div class="dropdown-divider bg-dark"></div>
-                    <li id="account" class="dropdown-item"><a class="text-decoration-none" href="#">
+                    <li id="account" class="dropdown-item"><a class="text-decoration-none" routerLink="account">
                             <svg class="bi mx-2" width="20" height="20" color="white">
                                 <use xlink:href="bootstrap-icons.svg#person"></use>
                             </svg>

@@ -1,0 +1,28 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Crunchylist</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form #postForm="ngForm" (ngSubmit)="onEditListInfo(postForm.value)">
+                    <div class="input-group">
+                        <span class="input-group-text">List Name:</span>
+                        <input type="text" class="form-control" ngModel name="listName">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">List Number:</span>
+                        <input type="text" class="form-control" ngModel name="listNum">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Date:</span>
+                        <input type="text" class="form-control" ngModel name="date">
+                    </div>
+                    <button class="btn btn-secondary" type="submit" data-bs-dismiss="modal">Create List</button>
+                    <button type="button" class="btn btn-primary">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SeriesCard } from './series-card.model';
-import { card_info } from './card-info.component';
 import { CardInfo } from './card-info.model';
 import { CardInfoService } from './card-info.service';
 
@@ -25,6 +23,6 @@ export class TopPicksComponent implements OnInit {
         this.cardInfoService.getCardInfo().subscribe((data: CardInfo[]) => {
             console.log(data);
             this.cardInfo = data;
-        })
+        });
     }
 }

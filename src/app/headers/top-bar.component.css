@@ -10,6 +10,10 @@ a:hover {
     color: white;
 }
 
+a:hover.left {
+    background-color: rgb(19, 19, 19);
+}
+
 a.top-bar:active {
     color: rgb(255, 115, 0);
 }
@@ -56,6 +60,12 @@ button:active {
 
 .dropdown-item:hover {
     background-color: rgb(51, 51, 51);
+}
+
+.email {
+    margin-left: 55px;
+    color: gray;
+    font-size: small;
 }
 
 #feedback {

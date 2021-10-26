@@ -29,6 +29,9 @@ import { ActionLayoutComponent } from './browse/action-layout.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './body/user-info.component';
 import { UserNameComponent } from './body/username.component';
+import { EditLoginComponent } from './headers/edit-login.component';
+import { FormsModule } from '@angular/forms';
+import { PopupComponent } from './lists/popup.component';
 
 @NgModule({
   declarations: [
@@ -57,15 +60,17 @@ import { UserNameComponent } from './body/username.component';
     ActionCardsComponent,
     ActionLayoutComponent,
     UserInfoComponent,
-    UserNameComponent
+    UserNameComponent,
+    EditLoginComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
-
+export class AppModule {}

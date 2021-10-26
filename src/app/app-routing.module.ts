@@ -8,6 +8,7 @@ import { CrunchylistsComponent } from './lists/crunchylists.component';
 import { SimulcastLayoutComponent } from './browse/simulcast-layout.component';
 import { ActionLayoutComponent } from './browse/action-layout.component';
 import { Action } from 'rxjs/internal/scheduler/Action';
+import { EditLoginComponent } from './headers/edit-login.component';
 
 const routes: Routes = [
   { path: 'videos/popular', component: PopularLayoutComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'videos/action', component: ActionLayoutComponent },
   { path: 'search', component: SearchLayoutComponent },
   { path: 'watchlist', component: WatchlistLayoutComponent },
-  { path: 'crunchylists', component: CrunchylistsComponent, outlet: 'mylists' }, 
+  { path: 'crunchylists', component: CrunchylistsComponent, outlet: 'mylists' },
+  { path: 'account', component: EditLoginComponent },
   { path: '', component: AppComponent, outlet: 'outlet1' },
 ];
 
