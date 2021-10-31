@@ -32,6 +32,9 @@ import { UserNameComponent } from './body/username.component';
 import { EditLoginComponent } from './headers/edit-login.component';
 import { FormsModule } from '@angular/forms';
 import { PopupComponent } from './lists/popup.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
@@ -68,7 +71,9 @@ import { PopupComponent } from './lists/popup.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]

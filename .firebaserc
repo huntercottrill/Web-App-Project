@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crunchyroll-dbc01": {
+      "hosting": {
+        "crunchyroll": [
+          "crunchyroll-dbc01"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crunchyroll-dbc01"
+  }
+}

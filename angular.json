@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "crunchyroll:build:production",
+            "firebaseProject": "crunchyroll-dbc01",
+            "firebaseHostingSite": "crunchyroll-dbc01"
+          }
         }
       }
     }
