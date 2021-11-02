@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
+import { LoginDatabaseService } from './login-database.service';
 import { Login } from './login.model'
 import { LoginService } from './login.service'
 
@@ -9,7 +10,8 @@ import { LoginService } from './login.service'
 })
 
 export class EditLoginComponent {
-    constructor(private loginService:LoginService) {
+    constructor(private loginService:LoginService, private dbService:LoginDatabaseService) {
+        dbService.showLoginData();
     }
 
     onEditLoginInfo(data:Login) {

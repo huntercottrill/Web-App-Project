@@ -15,8 +15,15 @@ const routes: Routes = [
   { path: 'simulcasts/seasons/summer-2021', component: SimulcastLayoutComponent },
   { path: 'videos/action', component: ActionLayoutComponent },
   { path: 'search', component: SearchLayoutComponent },
-  { path: 'watchlist', component: WatchlistLayoutComponent },
-  { path: 'crunchylists', component: CrunchylistsComponent, outlet: 'mylists' },
+  { path: 'list', component: WatchlistLayoutComponent,
+    children: [
+      {
+        path: 'crunchylists', component: CrunchylistsComponent
+      },
+      {
+        path: 'crunchylists', component: CrunchylistsComponent
+      }
+  ] },
   { path: 'account', component: EditLoginComponent },
   { path: '', component: AppComponent, outlet: 'outlet1' },
 ];
