@@ -16,7 +16,8 @@ export class TopPicksComponent {
 
     cards:SeriesCard[] = [];
 
-    constructor() {
+    constructor(private dbService:DatabaseService) {
+        dbService.showData();
         for (var card of card_info) {
             this.cards.push(new SeriesCard(card));
         }

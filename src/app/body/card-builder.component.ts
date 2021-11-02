@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { DatabaseService } from "./database.service";
 
 @Component({
     selector: "card-build",
@@ -15,5 +16,5 @@ export class CardBuildComponent {
     @Input()
     subDub! : string;
     @Input()
-    imagePath!: string;
+    imagePath!: string; 
 }
