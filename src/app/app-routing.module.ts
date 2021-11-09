@@ -27,7 +27,7 @@ const routes: Routes = [
   ] },
   { path: 'auth', component: AuthComponent},
   { path: 'account', component: EditLoginComponent },
-  { path: '', component: AppComponent, outlet: 'outlet1' },
+  { path: '', pathMatch: 'full', component: AppComponent, outlet: 'outlet1' },
 ];
 
 @NgModule({

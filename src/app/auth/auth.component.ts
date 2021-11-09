@@ -6,11 +6,14 @@ import { AuthResponse } from "./authResponse";
 
 @Component({
     selector: "crunchy-auth",
-    templateUrl: "auth.component.html"
+    templateUrl: "auth.component.html",
+    styleUrls: ['auth.component.css']
 })
 export class AuthComponent {
     public buttonClicked!: string;
     private authObservable!: Observable<AuthResponse>;
+    auth: AuthResponse | undefined;
+    authorize: boolean | undefined;
 
     constructor(private authService:AuthService) {
     }
@@ -18,7 +21,6 @@ export class AuthComponent {
     public onSubmit(data: NgForm) {
         console.log("Button clicked");
         console.log(data.value);
-
         if (this.buttonClicked == 'SignUp') {
             this.authObservable = this.authService.signup(data.value.email, data.value.password);
         }
@@ -28,10 +30,11 @@ export class AuthComponent {
 
         this.authObservable.subscribe(
             (data:AuthResponse) => {
-                console.log(data);
+                alert("Successfully logged in as " + data.email);
             },
             error => {
                 console.log(error.error);
+                alert("Login failed. Incorrect email or password")
             }
         );
 

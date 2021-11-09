@@ -21,5 +21,6 @@ export class UserInfoComponent implements OnInit {
             console.log(data);
             this.myInfo = data;
         })
+        console.log(this.myInfo);
     }
 }
