@@ -116,5 +116,8 @@
       }
     }
   },
-  "defaultProject": "crunchyroll"
+  "defaultProject": "crunchyroll",
+  "cli": {
+    "analytics": "f154e79d-6aac-4461-98c7-dca34c5cd9cf"
+  }
 }
